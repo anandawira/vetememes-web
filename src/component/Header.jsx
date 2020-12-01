@@ -7,12 +7,13 @@ import React from 'react';
 export default function Header() {
   return (
     <div id="header">
-      <div id="logo">
+      <Link to="/" id="logo">
         <img src={logo} alt="logo" />
         <p>
           vete<span>memes</span>
         </p>
-      </div>
+      </Link>
+
       <nav>
         <ul>
           <li>
