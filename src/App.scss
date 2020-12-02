@@ -1,11 +1,16 @@
 $header-height: 13vh;
+$main-height: 100vh - $header-height;
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 
 #header {
   height: $header-height;
+}
+
+main{
+  height: $main-height;
 }
