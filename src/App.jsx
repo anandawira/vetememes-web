@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import Header from './component/Header';
 import Home from './component/Home';
+import About from './component/About'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import ReactGA from 'react-ga';
@@ -16,6 +17,7 @@ export default function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/home" component={Home} />
+            <Route exact path="/about" component={About} />
           </Switch>
         </main>
       </Router>
