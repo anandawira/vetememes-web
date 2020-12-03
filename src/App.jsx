@@ -4,7 +4,10 @@ import Header from './component/Header';
 import Home from './component/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import ReactGA from 'react-ga';
 export default function App() {
+  ReactGA.initialize('G-YV368B7F34');
+  ReactGA.pageview(window.location.pathname + window.location.search);
   return (
     <div id="app">
       <Router>
