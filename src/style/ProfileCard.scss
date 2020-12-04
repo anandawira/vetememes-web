@@ -1,8 +1,36 @@
-.profile-card{
-    width: 25%;
-    margin: 1em 1em;
-    img{
-        width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+.profile-card {
+  width: 25%;
+  margin: 1em 1em;
+  position: relative;
+  cursor: pointer;
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+    min-height: 30%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.616);
+    opacity: 0%;
+    transition: opacity 0.5s ease;
+    p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5em;
+        color: white;
+        text-align: center;
+        text-transform: capitalize;
     }
+  }
+
+  &:hover .info{
+      opacity: 100%;
+  }
 }
