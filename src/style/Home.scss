@@ -13,10 +13,10 @@
     border-radius: 1em;
     justify-content: center;
 
-    img {
+    #poster {
       height: 100%;
       border-radius: 1em;
-    //   box-shadow: 10px 10px 10px grey;
+      //   box-shadow: 10px 10px 10px grey;
     }
 
     #detail {
@@ -28,14 +28,32 @@
 
       h3 {
         margin-top: 0.3em;
-        font-size: 1.5em;
+        font-size: 2em;
         font-weight: 500;
         text-transform: capitalize;
       }
 
       p {
-        font-size: 1.2em;
+        font-size: 1.5em;
         font-weight: 300;
+      }
+
+      #addCalendar {
+        margin-top: 1em;
+        a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: inherit;
+          #calendarIcon {
+            width: 3em;
+            height: 3em;
+          }
+          p {
+            font-weight: 500;
+            font-size: 2em;
+          }
+        }
       }
     }
   }
