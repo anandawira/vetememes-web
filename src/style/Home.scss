@@ -5,54 +5,57 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  #home-wrapper {
-    height: 80%;
-    display: flex;
-    padding: 1.5em;
-    box-shadow: 0px 0px 20px 10px grey;
-    border-radius: 1em;
-    justify-content: center;
+  #poster {
+    height: 90%;
+    //   box-shadow: 10px 10px 10px grey;
+  }
 
-    #poster {
-      height: 100%;
-      border-radius: 1em;
-      //   box-shadow: 10px 10px 10px grey;
+  #detail {
+    height: 90%;
+    margin-left: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    h1 {
+      font-size: 3em;
     }
 
-    #detail {
-      margin-left: 1em;
-      font-family: 'Source Sans Pro', sans-serif;
-      h1 {
-        font-size: 3em;
-      }
+    h3 {
+      margin-top: 0.3em;
+      font-size: 2em;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
 
-      h3 {
-        margin-top: 0.3em;
-        font-size: 2em;
-        font-weight: 500;
-        text-transform: capitalize;
-      }
+    p {
+      font-size: 1.5em;
+      font-weight: 300;
+    }
 
-      p {
-        font-size: 1.5em;
-        font-weight: 300;
-      }
+    #addCalendar {
+      margin-top: 1em;
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+        background-color: #1967d2;
+        border-radius: 0.5em;
+        width: fit-content;
+        padding: 0.5em 1em;
+        transition: background-color 0.3s ease;
+        #calendarIcon {
+          width: 2em;
+          height: 2em;
+          fill: white;
+        }
+        p {
+          margin-left: 0.3em;
+          font-weight: 700;
+          font-size: 1.5em;
+          color: white;
+        }
 
-      #addCalendar {
-        margin-top: 1em;
-        a {
-          display: flex;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-          #calendarIcon {
-            width: 3em;
-            height: 3em;
-          }
-          p {
-            font-weight: 500;
-            font-size: 2em;
-          }
+        &:hover {
+          background-color: #1f7dff;
         }
       }
     }
