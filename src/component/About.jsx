@@ -8,6 +8,7 @@ import kevin from '../asset/profile-photo/kevin.JPG';
 import nelson from '../asset/profile-photo/nelson.JPG';
 import wandi from '../asset/profile-photo/wandi.JPG';
 import winson from '../asset/profile-photo/winson.JPG';
+import jennifer from '../asset/profile-photo/jennifer.JPG';
 
 export default function About() {
   return (
@@ -18,7 +19,7 @@ export default function About() {
         <ProfileCard image={nelson} name="Nelson Tan" />
         <ProfileCard image={wandi} name="Wandi" />
         <ProfileCard image={winson} name="Winson Ng" />
-        <ProfileCard image={winson} name="Winson Ng" />
+        <ProfileCard image={jennifer} name="Jennifer Chandrinova" />
       </div>
     </div>
   );

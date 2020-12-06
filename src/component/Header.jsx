@@ -17,13 +17,15 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link to="/home">HOME</Link>
+            <Link to="/">HOME</Link>
+          </li><li>
+            <Link to="/thewriter">THE WRITER</Link>
+          </li>
+          <li>
+            <Link to="/watch">WATCH</Link>
           </li>
           <li>
             <Link to="/about">ABOUT</Link>
-          </li>
-          <li>
-            <Link to="/contact">CONTACT</Link>
           </li>
         </ul>
       </nav>
