@@ -11,7 +11,6 @@ $main-height: 100vh - $header-height;
   height: $header-height;
 }
 
-main{
-  position: relative;
-  min-height: $main-height;
+main {
+  height: $main-height;
 }
