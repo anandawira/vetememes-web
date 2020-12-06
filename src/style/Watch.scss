@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 #watch {
-  height: 100%;
+  min-height: inherit;
   display: flex;
-  padding-top: 3em;
+  align-items: center;
   justify-content: center;
-  text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 3em;
+  padding: 1em 0;
+  iframe {
+    width: 60vw;
+    height: 60vw * 315/560;
+  }
 }
