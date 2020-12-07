@@ -1,6 +1,6 @@
 import '../style/Watch.scss';
 
-import React, { useEffect } from 'react';
+import React from 'react';
 
 export default function Watch(props) {
   return (
