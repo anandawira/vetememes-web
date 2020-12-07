@@ -1,5 +1,6 @@
 $header-height: 13vh;
 $main-height: 100vh - $header-height;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
   margin: 0;
@@ -9,6 +10,40 @@ $main-height: 100vh - $header-height;
 
 #header {
   height: $header-height;
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 60%; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: black; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10vh; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  font-family: 'Open Sans', sans-serif;
+
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: white;
+    cursor: pointer;
+  }
 }
 
 main {

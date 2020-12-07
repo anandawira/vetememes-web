@@ -1,0 +1,66 @@
+@media screen and (max-width: 768px) {
+    #header{
+        height: 10vh;
+
+        justify-content: center;
+        position: relative;
+        #logo{
+            margin: 0;
+            p{
+                font-size: 2em;
+            }
+        }
+        nav{
+            display: none;
+        }
+
+        #menu-icon{
+            display: block;
+            fill: white;
+            position: absolute;
+            height: 2.5em;
+            width: 2.5em;
+            left: 0;
+            margin: 1em;
+            cursor: pointer;
+        }
+    }
+    main{
+        #home{
+            img{
+                max-width: 80%;
+            }
+        }
+
+        #the-writer{
+            display: block;
+            #poster{
+                height: 50%;
+                display: block;
+                margin: 1em auto;
+            }
+        }
+
+        #watch{
+            align-items: flex-start;
+            iframe {
+                width: 95vw;
+                height: 95vw * 315/560;
+              }
+        }
+
+        #about{
+            flex-direction: column-reverse;
+            #about-us{
+                margin: 1em auto;
+                width: 90%;
+                h1{
+                    display: none;
+                }
+            }
+            #teams{
+                width: 95%;
+            }
+        }
+    }
+}

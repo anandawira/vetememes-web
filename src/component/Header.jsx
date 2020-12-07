@@ -1,12 +1,14 @@
 import '../style/Header.scss';
 import logo from '../asset/vetememes.jpg';
 import { Link } from 'react-router-dom';
+import { ReactComponent as MenuIcon } from '../asset/menu-24px.svg';
 
 import React from 'react';
 
-export default function Header() {
+export default function Header(props) {
   return (
     <div id="header">
+      <MenuIcon id="menu-icon" onClick={props.openSidenav} />
       <Link to="/" id="logo">
         <img src={logo} alt="logo" />
         <p>
@@ -17,8 +19,6 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link to="/">HOME</Link>
-          </li><li>
             <Link to="/thewriter">THE WRITER</Link>
           </li>
           <li>
