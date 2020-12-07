@@ -30,19 +30,18 @@
       font-weight: 300;
     }
 
-    #addCalendar {
+    .button {
       margin-top: 1em;
       a {
         display: flex;
         align-items: center;
         text-decoration: none;
         color: inherit;
-        background-color: #1967d2;
         border-radius: 0.5em;
         width: fit-content;
         padding: 0.5em 1em;
-        transition: background-color 0.3s ease;
-        #calendarIcon {
+        transition: opacity 0.3s ease;
+        svg {
           width: 2em;
           height: 2em;
           fill: white;
@@ -56,8 +55,15 @@
         }
 
         &:hover {
-          background-color: #1f7dff;
+          opacity: 90%;
         }
+      }
+      &#addCalendar a {
+        background-color: #1967d2;
+      }
+
+      &#watchBtn a {
+        background-color: green;
       }
     }
   }

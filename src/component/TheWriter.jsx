@@ -1,6 +1,8 @@
 import '../style/TheWriter.scss';
 import poster from '../asset/poster.jpg';
+import { Link } from 'react-router-dom';
 import { ReactComponent as CalendarIcon } from '../asset/date_range-black-18dp.svg';
+import { ReactComponent as SlideshowIcon } from '../asset/slideshow-24px.svg';
 
 import React from 'react';
 
@@ -22,7 +24,7 @@ export default function Home() {
         <p>Thriller</p>
         <h3>cast</h3>
         <p>Winson, Wandi, Nelson, Kevin.</p>
-        <div id="addCalendar">
+        <div id="addCalendar" className="button">
           <a
             target="_blank"
             rel="noreferrer"
@@ -31,6 +33,12 @@ export default function Home() {
             <CalendarIcon id="calendarIcon"></CalendarIcon>
             <p>Add to calendar</p>
           </a>
+        </div>
+        <div id="watchBtn" className="button">
+          <Link to="/watch">
+            <SlideshowIcon></SlideshowIcon>
+            <p>Watch Trailer</p>
+          </Link>
         </div>
       </div>
     </div>
