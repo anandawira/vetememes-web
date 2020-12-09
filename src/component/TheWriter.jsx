@@ -3,12 +3,20 @@ import poster from '../asset/poster.jpg';
 import { Link } from 'react-router-dom';
 import { ReactComponent as CalendarIcon } from '../asset/date_range-black-18dp.svg';
 import { ReactComponent as SlideshowIcon } from '../asset/slideshow-24px.svg';
+import { Helmet } from 'react-helmet';
 
 import React from 'react';
 
 export default function Home() {
   return (
     <div id="the-writer">
+      <Helmet>
+        <title>The Writer | Vetememes Production</title>
+        <meta
+          name="description"
+          content="The Writer adalah film pertama yang diproduksi oleh Vetememes Production. Film ini bergenre misteri / thriller."
+        ></meta>
+      </Helmet>
       <img id="poster" src={poster} alt="poster" />
       <div id="detail">
         <h1>The Writer (2020)</h1>

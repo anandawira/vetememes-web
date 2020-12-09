@@ -9,10 +9,18 @@ import nelson from '../asset/profile-photo/nelson.JPG';
 import wandi from '../asset/profile-photo/wandi.JPG';
 import winson from '../asset/profile-photo/winson.JPG';
 import jennifer from '../asset/profile-photo/jennifer.JPG';
+import { Helmet } from 'react-helmet';
 
 export default function About() {
   return (
     <div id="about">
+      <Helmet>
+        <title>About | Vetememes Production</title>
+        <meta
+          name="description"
+          content="Vetememes Production adalah sebuah perusahaan yang memiliki fokus utama memproduksi film pendek."
+        ></meta>
+      </Helmet>
       <div id="teams">
         <ProfileCard image={ananda} name="Ananda Wiradharma" />
         <ProfileCard image={kevin} name="Kevin" />
