@@ -12,7 +12,7 @@ export default function Home() {
         <title>Home | Vetememes Production</title>
         <meta
           name="description"
-          content="Vetememes Production adalah sebuah perusahaan yang memiliki fokus utama memproduksi film pendek"
+          content="Vetememes Production adalah sebuah perusahaan yang memiliki fokus utama memproduksi film pendek."
         ></meta>
       </Helmet>
       <img src={backdrop} alt="backdrop" />
