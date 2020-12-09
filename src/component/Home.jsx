@@ -3,10 +3,18 @@ import '../style/Home.scss';
 import backdrop from '../asset/backdrop.webp';
 import { ReactComponent as MailIcon } from '../asset/mail_icon.svg';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
+import { Helmet } from 'react-helmet';
 
 export default function Home() {
   return (
     <div id="home">
+      <Helmet>
+        <title>Home | Vetememes Production</title>
+        <meta
+          name="description"
+          content="Vetememes Production adalah sebuah perusahaan yang memiliki fokus utama memproduksi film pendek"
+        ></meta>
+      </Helmet>
       <img src={backdrop} alt="backdrop" />
       <div id="subscribe-form">
         <MailIcon id="mail-icon" />
