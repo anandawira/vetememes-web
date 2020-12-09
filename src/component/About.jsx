@@ -24,17 +24,17 @@ export default function About() {
       <div id="about-us">
         <h1>About Us</h1>
         <p>
-          Vetememes Production adalah sebuah perushaan produksi short movie yang
-          berdiri dari tanggal 1 September 2020 oleh Winson.Vetememes Production
-          yang berdiri yang beralamat Windsor Phase 1 Blok II No.12 Kecamatan
-          Batam Kota, Batam.
+          Vetememes Production adalah sebuah perusahaan produksi short movie
+          yang berdiri dari tanggal 1 September 2020 oleh Winson. Vetememes
+          Production yang berdiri yang beralamat Windsor Phase 1 Blok II No.12
+          Kecamatan Batam Kota, Batam.
           <br />
           <br />
-          Perusahaan Vetememes Production ini sedang memproduksi short film
-          misterius yang berjudul “The_Writer” dengan genre
-          misterius/horror.Vetememes Production memperkerjakan dalam sebuah team
-          yang terdapat lima orang yang terdiri dari Director, Scriptwritter,
-          Editor and graphic, Marketing dan Cameraman/Video.
+          Perusahaan Vetememes Production saat ini sedang memproduksi sebuah
+          short film yang berjudul “The_Writer” dengan genre misterius/horror.
+          Vetememes Production beroperasi dalam sebuah team yang terdapat enam
+          orang yang terdiri dari Director, Scriptwritter, Editor and graphic,
+          Marketing dan Cameraman/Video.
         </p>
       </div>
     </div>
