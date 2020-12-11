@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense, lazy } from 'react';
 import './App.scss';
 import Header from './component/Header';
-import Home from './component/Home';
-import TheWriter from './component/TheWriter';
-import Watch from './component/Watch';
-import About from './component/About';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './style/responsive.scss';
 import { ReactComponent as CloseIcon } from './asset/close-24px.svg';
-
 import ReactGA from 'react-ga';
+
+const Home = lazy(() => import('./component/Home'));
+const TheWriter = lazy(() => import('./component/TheWriter'));
+const Watch = lazy(() => import('./component/Watch'));
+const About = lazy(() => import('./component/About'));
+
 export default function App() {
   ReactGA.initialize('UA-184488128-1');
   ReactGA.pageview(window.location.pathname + window.location.search);
@@ -42,12 +43,14 @@ export default function App() {
           </Link>
         </div>
         <main>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/thewriter" component={TheWriter} />
-            <Route exact path="/watch" component={Watch} />
-            <Route exact path="/about" component={About} />
-          </Switch>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/thewriter" component={TheWriter} />
+              <Route exact path="/watch" component={Watch} />
+              <Route exact path="/about" component={About} />
+            </Switch>
+          </Suspense>
         </main>
       </Router>
     </div>
