@@ -18,7 +18,7 @@ export default function Watch(props) {
           title="trailer"
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/ItZy2fuK55s"
+          src="https://www.youtube.com/embed/lvD-aOiz3Yc"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

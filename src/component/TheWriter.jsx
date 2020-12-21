@@ -45,7 +45,7 @@ export default function Home() {
         <div id="watchBtn" className="button">
           <Link to="/watch">
             <SlideshowIcon></SlideshowIcon>
-            <p>Watch Trailer</p>
+            <p>Watch Movie</p>
           </Link>
         </div>
       </div>
